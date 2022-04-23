@@ -1,0 +1,50 @@
+.navbar {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+}
+
+.navbar h1 {
+    font-size: 2.5rem;
+}
+
+.buttons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.buttons button {
+    margin: 0 1rem;
+    min-width: 12rem;
+    min-height: 2.5rem;
+    padding: 1rem;
+    white-space: nowrap;
+    border: solid 1px #ffffff00;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: #00b3ffbd;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.buttons button:hover {
+    border: solid 1px #ffffff3f;
+    background-color: #009de100;
+}
