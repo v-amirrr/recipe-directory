@@ -4,6 +4,10 @@
   color-scheme: dark;
 }
 
+[data-theme="dark"]{}
+
+[data-theme="light"]{}
+
 * {
   box-sizing: border-box;
   margin: 0;
