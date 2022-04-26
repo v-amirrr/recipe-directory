@@ -1,0 +1,27 @@
+.recipe {
+    width: 20rem;
+    height: 30rem;
+    overflow: hidden;
+    margin: 0 3rem;
+}
+
+.recipe h1 {
+    white-space: nowrap;
+    font-size: 1.6rem;
+}
+
+.recipeTime {
+    font-size: 1rem;
+}
+
+.ingredients {
+    display: flex;
+}
+
+.ingredient {
+    font-size: 1rem;
+}
+
+.recipeMethod {
+    font-size: 1rem;
+}

@@ -24,4 +24,18 @@ export const data = [
         method: "1. Pre-heat the oven to 200C/3C/gas 5. Add the pasata, green pepper and mushrooms to the base. Place the lid on the oven and cook for 30 minutes. 5. Serve with a slaw of your choice",
         cookingTime: "35 minutes"
     },
+
+    {
+        id: "3",
+        title: "Greek Salad",
+        ingredients: [
+          "1 Onion",
+          "1 Block of Feta",
+          "Olives",
+          "Tomatoes",
+          "Olive Oil"
+        ],
+        method: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse minima ex rem quis similique eum ratione quaerat, voluptas molestias ut repudiandae delectus voluptates. Eius esse at tenetur ab accusamus excepturi?",
+        cookingTime: "35 minutes"
+    },
 ]

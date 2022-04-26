@@ -10,8 +10,9 @@ const HomePage = () => {
     return (
         <>
                 <div className={styles.homePage}>
-                    {data.map(item => <Recipe data={item} />)}
+                    {data.map(item => <Recipe key={item.id} data={item} />)}
                 </div>
+                {console.log(data)}
         </>
     );
 };
