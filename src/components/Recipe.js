@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from "./Recipe.module.css";
 
@@ -11,7 +12,8 @@ const Recipe = ({data}) => {
                 <div className={styles.ingredients}>
                     {data.ingredients.map(item => <p className={styles.recipe.ingredient} key={Math.random()}>{item}</p>)}
                 </div>
-                <p className={styles.recipeMethod}>{data.method}...</p>
+                <p className={styles.recipeMethod}>{data.method.substring(0, 100)}...</p>
+                <button>More Details</button>
             </div>
         </>
     );
