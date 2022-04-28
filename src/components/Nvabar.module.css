@@ -11,6 +11,7 @@
 .navbar h1 {
     white-space: nowrap;
     font-size: 2rem;
+    color: #fff;
 }
 
 .icons {
@@ -39,6 +40,7 @@
     -moz-transition: all .3s;
     -ms-transition: all .3s;
     -o-transition: all .3s;
+    color: #fff;
 }
 
 .addIcon:hover {

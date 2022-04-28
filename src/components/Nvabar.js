@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from "./Nvabar.module.css";
 
@@ -17,9 +18,9 @@ const Nvabar = () => {
     return (
         <>
             <div className={styles.navbar}>
-                <h1>Recipe Directory</h1>
+                <Link to={"/"}><h1>Recipe Directory</h1></Link>
                 <div className={styles.icons}>
-                    <div className={styles.addIcon}>+</div>
+                    <Link to={"/build-recipe"}><div className={styles.addIcon}>+</div></Link>
                     <div className={styles.switchMode}>
                         <input type="checkbox" className={styles.modeCheckbox} onClick={() => setThemeMode(!themeMode)} />
                         <span className={styles.modeIcons}>
