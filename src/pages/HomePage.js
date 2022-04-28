@@ -12,7 +12,6 @@ const HomePage = () => {
                 <div className={styles.homePage}>
                     {data.map(item => <Recipe key={item.id} data={item} />)}
                 </div>
-                {console.log(data)}
         </>
     );
 };

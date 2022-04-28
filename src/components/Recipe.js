@@ -10,10 +10,10 @@ const Recipe = ({data}) => {
                 <h1>{data.title}</h1>
                 <p className={styles.recipeTime}>{data.cookingTime}</p>
                 <div className={styles.ingredients}>
-                    {data.ingredients.map(item => <p className={styles.recipe.ingredient} key={Math.random()}>{item}</p>)}
+                    {data.ingredients.map(item => <p key={Math.random()}>{item}</p>)}
                 </div>
                 <p className={styles.recipeMethod}>{data.method.substring(0, 100)}...</p>
-                <button>More Details</button>
+                <Link to={`/recipe/${data.id}`}><button>More Details</button></Link>
             </div>
         </>
     );
