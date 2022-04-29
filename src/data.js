@@ -13,7 +13,7 @@ export const data = [
     },
 
     {
-        id: "2",
+        id: 2,
         title: "Veggie Pizza",
         ingredients: [
           "1 Base",
@@ -26,7 +26,7 @@ export const data = [
     },
 
     {
-        id: "3",
+        id: 3,
         title: "Greek Salad",
         ingredients: [
           "1 Onion",
