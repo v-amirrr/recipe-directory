@@ -16,15 +16,19 @@ const BuildRecipe = () => {
     const [time, setTime] = useState();
 
     const addRecipe = e => {
-        data.push({
-            id: data[data.length - 1].id + 1,
-            title: title,
-            ingredients: [],
-            method: method,
-            cookingTime: time
-        });
-        resetInputs();
-        navigate("/");
+        if (title && method) {
+            data.push({
+                id: data[data.length - 1].id + 1,
+                title: title,
+                ingredients: [],
+                method: method,
+                cookingTime: time
+            });
+            resetInputs();
+            navigate("/");
+        } else {
+            alert("You Have to Fill the Title and Method")
+        }
     }
 
     const addIngredients = e => {
