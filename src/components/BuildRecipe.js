@@ -20,7 +20,7 @@ const BuildRecipe = () => {
             data.push({
                 id: data[data.length - 1].id + 1,
                 title: title,
-                ingredients: [],
+                ingredients: [...ingredients],
                 method: method,
                 cookingTime: time
             });
