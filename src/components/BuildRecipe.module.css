@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     padding: 3rem;
-    background-color: #000;
+    background-color: var(--recipe-backgound);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -12,7 +12,7 @@
     -o-border-radius: 10px;
     position: absolute;
     left: 50%;
-    top: 55%;
+    top: 60%;
     font-size: 1.3rem;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -32,6 +32,7 @@ input, textarea {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     margin-left: 1rem;
+    background-color: var(--recipe-build-input-background);
 }
 
 textarea {
@@ -76,34 +77,29 @@ textarea {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    background-color: #181818;
+    background-color: var(--recipe-button);
     padding: .5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: all .3s;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
 }
 
 .formPartIngOne div button:hover {
-    background-color: #212121;
+    background-color: var(--recipe-button-hover);
 }
 
 .ingredients {
     margin-top: 1rem;
     min-width: 100%;
     max-width: 20rem;
-    overflow-x: scroll;
-    height: 4rem;
+    min-height: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff23;
-    padding: .2rem;
+    flex-wrap: wrap;
+    background-color: var(--recipe-build-input-background);
+    padding: .5rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -117,15 +113,11 @@ textarea {
 
 label, h1 {
     white-space: nowrap;
+    font-size: 1.5rem;
 }
 
-hr {
-    width: 20rem;
-    height: .5px;
-    border: none;
-    background-color: #ffffff6f;
-    margin: auto;
-    display: none;
+h1 {
+    font-size: 3rem;
 }
 
 .buttons {
@@ -143,7 +135,7 @@ hr {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    background-color: #0d0d0d;
+    background-color: var(--recipe-button);
     border: none;
     cursor: pointer;
     transition: all .4s;
@@ -152,9 +144,9 @@ hr {
     -ms-transition: all .4s;
     -o-transition: all .4s;
     color: #00b7ff;
-    margin: 1rem;
+    margin: 2rem 1rem;
 }
 
 .buttons > *:hover {
-    background-color: #1b1b1b;
+    background-color: var(--recipe-button-hover);
 }

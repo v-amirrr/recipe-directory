@@ -10,7 +10,7 @@ const HomePage = () => {
     return (
         <>
                 <div className={styles.homePage}>
-                    {data.map(item => <Recipe key={item.id} data={item} />)}
+                    {data.map(item => item && <Recipe key={item.id} recipeData={item} />)}
                 </div>
         </>
     );

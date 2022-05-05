@@ -1,59 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;900&display=swap');
 
 :root {
-  color-scheme: dark;
+    color-scheme: var(--color-scheme);
 }
 
-[data-theme="dark"]{}
+[data-theme="dark"]{
+    --color-scheme: dark;
 
-[data-theme="light"]{}
+    --background: #121212;
+    --color: #fff;
+
+    --button: #282828;
+    --button-hover: #3f3f3f;
+
+    --navbar: #000000;
+
+    --recipe-backgound: #000;
+    --recipe-button: #0d0d0d;
+    --recipe-button-hover: #1b1b1b;
+
+    --recipe-build-input-background: #2d2d2d;
+}
+
+[data-theme="light"]{
+    --color-scheme: light;
+
+    --background: #c5c5c5;
+    --color: #000;
+
+    --button: #dadada;
+    --button-hover: #989898;
+
+    --navbar: #ffffffd5;
+    
+    --recipe-backgound: #fff;
+    --recipe-button: #e4e4e4;
+    --recipe-button-hover: #cecece;
+
+    --recipe-build-input-background: #cfcfcf;
+}
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: color .1s, background-color .3s;
+    -webkit-transition: color .1s, background-color .3s;
+    -moz-transition: color .1s, background-color .3s;
+    -ms-transition: color .1s, background-color .3s;
+    -o-transition: color .1s, background-color .3s;
 }
 
 html {
-  font-size: calc(45% + .8vmin);
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  user-select: none;
+    font-size: calc(45% + .8vmin);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    user-select: none;
+    height: 100%;
 }
 
 body {
-  font-family: 'Red Hat Display', sans-serif;
-  color: #fff;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--color);
+    background-color: var(--background);
 }
 
 :any-link {
-  text-decoration: none;
-  all: unset;
-  cursor: pointer;
-  color: #00b7ff;
+    text-decoration: none;
+    all: unset;
+    cursor: pointer;
 }
 
 body::-webkit-scrollbar {
-  width: 1rem;
+    width: 1rem;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #424242;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+    background-color: #424242;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #565656;
+    background-color: #565656;
 }

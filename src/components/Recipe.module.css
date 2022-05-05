@@ -1,10 +1,10 @@
 .recipe {
     position: relative;
-    width: 20rem;
-    min-height: 20rem;
+    width: 23rem;
+    min-height: 25rem;
     overflow: hidden;
     margin: 3rem;
-    background-color: #000;
+    background-color: var(--recipe-backgound);
     padding: 1rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -15,15 +15,15 @@
 
 .recipe h1 {
     white-space: nowrap;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 .recipeTime {
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .ingredients {
-    font-size: .8rem;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
@@ -32,27 +32,23 @@
 }
 
 .recipeMethod {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
 }
 
 .recipe button {
+    font-size: 1.5rem;
     width: 100%;
-    padding: .6rem 0;
+    padding: .8rem 0;
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #0d0d0d;
+    background-color: var(--recipe-button);
     color: #00b7ff;
     border: none;
     cursor: pointer;
-    transition: all .4s;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
 }
 
 .recipe button:hover {
-    background-color: #1b1b1b;
+    background-color: var(--recipe-button-hover);
 }

@@ -59,8 +59,6 @@ const BuildRecipe = () => {
                         <input type="text" onChange={(e) => setTitle(e.target.value)} value={title} required />
                     </div>
 
-                    <hr />
-
                     <div className={styles.formPartIng}>
                         <div className={styles.formPartIngOne}>
                             <label>Recipe Ingredients:</label>
@@ -72,14 +70,10 @@ const BuildRecipe = () => {
                         <div className={styles.ingredients}>{ingredients.map(item => <p key={Math.random()}>{item}</p>)}</div>
                     </div>
 
-                    <hr />
-
                     <div className={styles.formPart}>
                         <label>Recipe Method:</label>
                         <textarea onChange={(e) => setMethod(e.target.value)} value={method} required />
                     </div>
-
-                    <hr />
 
                     <div className={styles.formPart}>
                         <label>Cooking Time in Miunte:</label>

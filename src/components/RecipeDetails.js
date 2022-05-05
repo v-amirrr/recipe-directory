@@ -8,13 +8,13 @@ import { data } from ".././data";
 const RecipeDetails = () => {
 
     const { id } = useParams();
-    const recipe = data[id-1]
+    const recipe = data[id-1];
 
     return (
         <>
             <div className={styles.recipe}>
                 <h1>{recipe.title}</h1>
-                <p className={styles.recipeTime}>{recipe.cookingTime}</p>
+                <p className={styles.recipeTime}>{recipe.cookingTime} Minutes</p>
                 <div className={styles.ingredients}>
                     {recipe.ingredients.map(item => <p key={Math.random()}>{item}</p>)}
                 </div>
