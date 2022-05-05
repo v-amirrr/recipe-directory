@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { motion } from 'framer-motion';
+
 import styles from "./BuildRecipe.module.css";
 
 import { data } from "../data";
+
+const recipeVariants = {
+    initial: {opacity: 0},
+    animate: {opacity: 1, transition: {duration: 1}},
+    exit: {opacity: 0}
+}
 
 const BuildRecipe = () => {
 
@@ -50,7 +58,7 @@ const BuildRecipe = () => {
 
     return (
         <>
-            <div className={styles.buildRecipe}>
+            <motion.div className={styles.buildRecipe} variants={recipeVariants} initial="initial" animate="animate" exit="exit">
                 <h1>Create a New Recipe</h1>
 
                 <div>
@@ -85,7 +93,7 @@ const BuildRecipe = () => {
                         <button onClick={addRecipe}>Create The Recipe</button>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 };
