@@ -14,7 +14,6 @@ const recipeVariants = {
 }
 
 const RecipeDetails = () => {
-
     const { id } = useParams();
     const recipe = data[id-1];
 
